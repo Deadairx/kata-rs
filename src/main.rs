@@ -1,3 +1,6 @@
+mod linear_search_test;
+mod linear_search;
+
 fn main() {
 }
 
@@ -6,7 +9,7 @@ fn bubble_sort(arr: Vec<i32>) -> Vec<i32> {
 }
 
 #[cfg(test)]
-mod tests {
+mod bubble_sort {
     #[test]
     fn test_bubble_sort_1() {
         let arr: Vec<i32> = vec!(3, 5, 1, 2, 4);
