@@ -1,5 +1,7 @@
 mod linear_search_test;
 mod linear_search;
+mod binary_search_test;
+mod binary_search;
 
 fn main() {
 }
