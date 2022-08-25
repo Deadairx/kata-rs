@@ -9,7 +9,19 @@ fn main() {
 }
 
 fn bubble_sort(arr: Vec<i32>) -> Vec<i32> {
-    arr
+    let mut new_arr = arr.clone();
+
+    for i in 0..new_arr.len() {
+        for j in 0..new_arr.len()-1-i {
+            if new_arr[j] > new_arr[j+1] {
+                let bubble = new_arr[j];
+                new_arr[j] = new_arr[j+1];
+                new_arr[j+1] = bubble;
+            }
+        }
+    }
+
+    new_arr
 }
 
 #[cfg(test)]
